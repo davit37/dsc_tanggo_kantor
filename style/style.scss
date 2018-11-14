@@ -112,4 +112,16 @@ $font-brown:#773710;
             font-weight: bold;
         }
     }
+
+    .navbar {
+        div{
+            div{
+                ul{
+                   li.navbar-item{
+                        margin-right: 55px !important;
+                    }
+                }
+            }
+        }
+    }
 }

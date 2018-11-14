@@ -63,6 +63,9 @@
   .nav-link i {
     display: inline-block;
     font-size: 30px !important;
-    font-weight: bold; } }
+    font-weight: bold; }
+
+  .navbar div div ul li.navbar-item {
+    margin-right: 55px !important; } }
 
 /*# sourceMappingURL=style.css.map */
