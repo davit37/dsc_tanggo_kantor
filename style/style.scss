@@ -1,40 +1,115 @@
+//variabel
+$font-brown:#773710;
+
+//
+
 @font-face {
     font-family: "Museo 700";
     src: url(../font/Museo700-Regular.woff);
 }
 
-.nav-link{
+@font-face {
+    font-family: "Museo 500";
+    src: url(../font/Museo500-Regular.woff);
+}
+
+@font-face {
+    font-family: "Breeze";
+    src: url(../font/Breeze-Personal-Use-Regular.ttf.woff);
+}
+
+.nav-link {
     font-family: "Museo 700";
-    color: #773710!important;
+    color: $font-brown !important;
 
     margin-left: 20px;
 
-    
-    &:hover{
-        color:#602d0d !important;
+
+    &:hover {
+        color: #602d0d !important;
     }
-    i{
-       display: none;
+
+    i {
+        display: none;
     }
-    
-   
+
+
 }
-.jumbotron-first{
-    
+
+.navbar{
+    margin-top: 15px;
+}
+
+.jumbotron-first {
+
     background-image: linear-gradient(#d8b080, #c3a384);
+
+    .row {
+        height: 100%;
+
+        div {
+            .bot-left {
+                position: relative;
+
+                padding: 5px;
+                background-image: url(../icon/bg-img.png);
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                width: 310px;
+                height: 310px;
+
+
+                img {
+                    width: 208px;
+                    height: 208px;
+                    border-radius: 50%;
+                    margin-left: 70px;
+                    margin-top: 28px;
+
+
+                }
+            }
+
+            .card-body {
+                margin-left: 12px;
+                margin-top: -30px;
+                padding: 0;
+                text-align: center;
+
+                .card-title {
+                    font-family: "Breeze";
+                    font-size: 20pt;
+                    color: $font-brown;
+                }
+
+                .custom-text {
+                    color: $font-brown;
+                    font-family: "Museo 500";
+                    font-size: 15px;
+                    width: 220px;
+                    height: 200px;
+                    margin-left: 40px;
+                    margin-top: 12px;
+
+                }
+            }
+
+        }
+    }
 }
 
 @media (min-width: 992px) {
-    
-    .jumbotron-first{
-        margin-top: -70px;
+
+    .jumbotron-first {
+        margin-top: -86px;
+        height: 1559.85px;
     }
-     
-    .nav-link{
-        i{
+
+    .nav-link {
+        i {
             display: inline-block;
-            font-size: 20px !important;
+            font-size: 30px !important;
             font-weight: bold;
         }
     }
- }
+}
