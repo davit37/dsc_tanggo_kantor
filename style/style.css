@@ -60,6 +60,10 @@
         font-family: "Gotham-Bold"; }
         .jumbotron-first .row div .card-body .sosmed i {
           font-weight: 700; }
+      .jumbotron-first .row div .card-body .btn {
+        background-color: #602d0d;
+        border-radius: 20px;
+        color: white; }
 
 @media (min-width: 992px) {
   .jumbotron-first {
@@ -67,12 +71,24 @@
     width: 100%;
     height: 1559.85px; }
 
-  .nav-link i {
-    display: inline-block;
-    font-size: 30px !important;
-    font-weight: bold; }
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #602d0d;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -8px;
+    border-radius: 200px;
+    text-shadow: 0 1px gray; }
 
   .navbar div div ul li.nav-item {
-    margin-right: 40px !important; } }
+    margin-right: 40px !important; }
+
+  .nav-item a i {
+    display: inline-block;
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #602d0d; } }
 
 /*# sourceMappingURL=style.css.map */

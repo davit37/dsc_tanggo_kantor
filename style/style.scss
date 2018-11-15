@@ -107,6 +107,12 @@ $font-brown:#602d0d;
                     }
 
                 }
+
+                .btn{
+                    background-color: $font-brown;
+                    border-radius: 20px;
+                    color:white;
+                }
             }
 
         }
@@ -122,10 +128,21 @@ $font-brown:#602d0d;
     }
 
     .nav-link {
-        i {
-            display: inline-block;
-            font-size: 30px !important;
-            font-weight: bold;
+        
+        &:hover
+       { 
+           &::after{
+            content: '';
+            display: block;
+            border-bottom: 3px solid $font-brown;
+            width: 50%;
+            margin: auto;
+            padding-bottom: 3px;
+            margin-bottom: -8px;
+            border-radius: 200px;
+            text-shadow: 0 1px gray;
+            
+         }
         }
     }
 
@@ -137,6 +154,16 @@ $font-brown:#602d0d;
                         margin-right: 40px !important;
                     }
                 }
+            }
+        }
+    }
+    .nav-item{
+        a{
+            i {
+                display: inline-block;
+                font-size: 30px !important;
+                font-weight: bold;
+                color: $font-brown
             }
         }
     }
